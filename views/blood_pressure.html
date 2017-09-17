@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>Blutdruck, Puls und Gewicht</title>
+
+    <!-- Styles -->
+    <link href="../public/css/app.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Scripts -->
+    
+		<script src="../public/js/jquery-3.1.1.min.js"></script>
+		<script src="../public/js/vue.js"></script>
+		<script src="../public/js/blood_pressure.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Eingabe von Blutdruck, Puls und Gewicht</div>
+ 
+					<div class="panel-body">
+						<form id="blood_form" action="/save_blood_data">
+							<div class="row">
+								<div class="col-sm-6">								
+								<label>Datum</label>
+								</div>
+								<div class="col-sm-6">
+								<input id="datepicker" type="input" name="date">
+								</div>								
+								<div class="col-sm-6">
+								<label>Systolisch</label>
+								</div>
+								<div class="col-sm-6">
+								<input type="text" name="systolisch">
+								</div>
+								<div class="col-sm-6">
+								<label>Diastolisch</label>
+								</div>
+								<div class="col-sm-6">
+								<input type="text" name="diastolisch">
+								</div>
+								<div class="col-sm-6">
+								<label>Puls</label></div>
+								<div class="col-sm-6">									
+								<input type="text" name="pulse">
+								</div>
+								<div class="col-sm-6">
+								<label>Gewicht</label>
+								</div>
+								<div class="col-sm-6">
+								<input type="text" name="weight"></div>
+							</div>
+						</form>
+					  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+#blood_form {
+	background-color: #90EE90;
+	color: #F23232;
+	padding: 22px;
+	}
+#blood_form > div > div > label
+{
+	padding-left: 111px;
+	
+}
+#blood_form > div > div {
+	padding: 11px 55px;
+}
